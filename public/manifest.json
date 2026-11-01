@@ -4,11 +4,11 @@
   "manifest_version": 1,
   "description": "在角色 Token 右側顯示共享 HP / MP 狀態條",
   "author": "yourname",
-  "icon": "./icon.svg",
+  "icon": "/owlbear-status-bars/icon.svg",
   "action": {
     "title": "HP / MP Status Bars",
-    "icon": "./icon.svg",
-    "popover": "./",
+    "icon": "/owlbear-status-bars/icon.svg",
+    "popover": "/owlbear-status-bars/",
     "height": 520,
     "width": 360
   }

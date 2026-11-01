@@ -1,9 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// base: './' 讓 GitHub Pages 子路徑（/repo-name/）與本機都能正確載入資源
+// GitHub Pages 專案站網址為 /owlbear-status-bars/
+// Owlbear 會把 manifest 裡以 / 開頭的路徑接到網域根目錄，必須帶上 repo 名稱。
+const BASE = "/owlbear-status-bars/";
+
 export default defineConfig({
-  base: "./",
+  base: BASE,
   plugins: [react()],
   server: {
     // 允許透過 tunnel（ngrok / cloudflared）給其他玩家測試
